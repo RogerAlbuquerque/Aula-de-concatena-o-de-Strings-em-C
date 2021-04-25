@@ -1,52 +1,54 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <locale.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main(){
+setlocale(0, "portuguese");
 
-# Linker output
-*.ilk
-*.map
-*.exp
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+void palavraConcatenada (char string1[] , int t1 , char string2[] , int t2 , char string3 [], int t3 , char string4 []);
+char palavra1[] ={'P','ã','o',' '};
+char palavra2[] ={'c','o','m',' ',};
+char palavra3[] ={'m','o','r','t','a','d','e','l','a'};
+char concatenado[17];
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+palavraConcatenada (palavra1 , 4 , palavra2 , 8 , palavra3 , 9 , concatenado );
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+for (int i = 0 ; i < 17 ; i++){
+
+    printf("%c", concatenado[i]);
+
+}
+
+printf("\n"); //aqui é so pra ficar bonitinho mesmo kkkk
+
+
+return 0;
+}
+void palavraConcatenada (char string1[] , int t1 , char string2[] , int t2 , char string3 [], int t3 , char string4 []){
+
+
+for (int i = 0 ; i < t1 ; i++){
+
+    string4 [i]= string1[i];
+
+}
+
+for (int i = 0 ; i < t2 ; i++){
+
+    string4 [t1 + i]= string2[i];
+
+}
+
+
+for (int i = 0 ; i < t3 ; i++){
+
+    string4 [t2 + i]= string3[i];
+
+}
+
+
+
+}
