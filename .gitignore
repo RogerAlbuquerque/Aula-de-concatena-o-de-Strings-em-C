@@ -5,8 +5,6 @@ int main(){
 setlocale(0, "portuguese");
 
 
-
-
 void palavraConcatenada (char string1[] , int t1 , char string2[] , int t2 , char string3 [], int t3 , char string4 []);
 char palavra1[] ={'P','ã','o',' '};
 char palavra2[] ={'c','o','m',' ',};
@@ -29,9 +27,6 @@ return 0;
 }
 
 
-
-
-
 void palavraConcatenada (char string1[] , int t1 , char string2[] , int t2 , char string3 [], int t3 , char string4 []){
 
 
@@ -51,9 +46,5 @@ for (int i = 0 ; i < t2 ; i++){
 for (int i = 0 ; i < t3 ; i++){
 
     string4 [t2 + i]= string3[i];
-
 }
-
-
-
 }
