@@ -27,6 +27,11 @@ printf("\n"); //aqui é so pra ficar bonitinho mesmo kkkk
 
 return 0;
 }
+
+
+
+
+
 void palavraConcatenada (char string1[] , int t1 , char string2[] , int t2 , char string3 [], int t3 , char string4 []){
 
 
